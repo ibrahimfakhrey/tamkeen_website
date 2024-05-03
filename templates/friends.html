@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CSS File -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- My Framework CSS File -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google font | Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google font | Courgette -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="./imgs/favcon-32x32.png" type="image/x-icon">
+    <title>Friends</title>
+</head>
+
+<body>
+    <div class="container | d-flx">
+        <!--===== Sidebar Section =====-->
+        <aside class="sidebar | bg-white p-20 p-rel">
+            <div class="sidebar__logo">
+                <img src="./imgs/Logo.webp" alt="Logo">
+                <h2>Nayel</h2>
+            </div>
+            <ul class="sidebar__list">
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-briefcase fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="active | d-flx align-center fs-16 cr-black rad-6 p-10" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="plans.html">
+                        <i class="fa-solid fa-layer-group fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--===== Content Section =====-->
+        <main class="content | w-full">
+            <!-- Content Head -->
+            <div class="content__head | bg-white p-15 flx-center-btween">
+                <div class="content__search | p-rel">
+                    <input class="p-10 rad-10 fs-15" type="search" placeholder="Type a keywork">
+                </div>
+                <div class="content__icons | d-flx align-center">
+                    <span class="p-rel">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="./imgs/avatar.webp" alt="Header Avatar">
+                </div>
+            </div>
+            <!-- Content Title -->
+            <h1 class="content__title | cr-black p-rel">Friends</h1>
+            <!-- Friends Wrapper -->
+            <div class="friends__wrapper | d-grid gap-20 m-20">
+                <!-- Friend Box [1] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-01.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Areeg Nasser</h4>
+                        <small class="cr-gray fs-14">JavaScript Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">99 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">13 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">25 Articles</small>
+                        </div>
+                        <h3 class="stats-vip | cr-orange">VIP</h3>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 02/10/2021</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [2] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-02.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Omar Saleh</h4>
+                        <small class="cr-gray fs-14">Cloud Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">31 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">16 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">12 Articles</small>
+                        </div>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 11/08/2021</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [3] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-03.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Nezar Ali</h4>
+                        <small class="cr-gray fs-14">Mobile Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">27 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">09 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">07 Articles</small>
+                        </div>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 16/11/2021</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [4] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-04.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Shady Nabil</h4>
+                        <small class="cr-gray fs-14">Backend Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">19 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">07 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">13 Articles</small>
+                        </div>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 26/12/2021</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [5] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-05.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Ibrahim Fathy</h4>
+                        <small class="cr-gray fs-14">Content Creator</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">31 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">19 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">11 Articles</small>
+                        </div>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 04/02/2022</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [6] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-01.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Eman Ramy</h4>
+                        <small class="cr-gray fs-14">Frontend Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">81 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">16 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">20 Articles</small>
+                        </div>
+                        <h3 class="stats-vip | cr-orange">VIP</h3>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 09/04/2022</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [7] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-02.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Omar Saleh</h4>
+                        <small class="cr-gray fs-14">Cloud Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">31 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">16 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">12 Articles</small>
+                        </div>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 11/08/2021</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [8] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-03.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Nezar Ali</h4>
+                        <small class="cr-gray fs-14">Mobile Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">27 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">09 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">07 Articles</small>
+                        </div>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 16/11/2021</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Box [9] -->
+                <div class="friend__box | bg-white p-20 rad-10 p-rel">
+                    <!-- Friend Contact -->
+                    <div class="friend-contact | d-flx align-center">
+                        <i class="fa-solid fa-phone fa-fw"></i>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </div>
+                    <!-- Friend Info -->
+                    <div class="friend-info | mt-15 pb-5">
+                        <img class="friend-img | mb-10" src="./imgs/friend-04.webp" alt="Friend image">
+                        <h4 class="cr-dk-purple">Shady Nabil</h4>
+                        <small class="cr-gray fs-14">Backend Developer</small>
+                    </div>
+                    <!-- Friend Stats -->
+                    <div class="friend-stats | fs-14 p-rel">
+                        <!-- Stats Box [1] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-face-smile fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">19 Friends</small>
+                        </div>
+                        <!-- Stats Box [2] -->
+                        <div class="stats-box | mb-10">
+                            <i class="fa-regular fa-folder fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">07 Projects</small>
+                        </div>
+                        <!-- Stats Box [3] -->
+                        <div class="stats-box">
+                            <i class="fa-regular fa-newspaper fa-fw | cr-blue"></i>
+                            <small class="cr-black fs-14">13 Articles</small>
+                        </div>
+                    </div>
+                    <!-- Friend Join -->
+                    <div class="friend-join | flx-center-btween fs-13">
+                        <span class="cr-gray">Join 26/12/2021</span>
+                        <div class="friend-links | d-flx align-center gap-5">
+                            <a class="bg-blue cr-white label rad-5" href="profile.html">Profile</a>
+                            <a class="bg-red cr-white label rad-5" href="#">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CSS File -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- My Framework CSS File -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google font | Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google font | Courgette -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="./imgs/favcon-32x32.png" type="image/x-icon">
+    <title>Files</title>
+</head>
+
+<body>
+    <div class="container | d-flx">
+        <!--===== Sidebar Section =====-->
+        <aside class="sidebar | bg-white p-20 p-rel">
+            <div class="sidebar__logo">
+                <img src="./imgs/Logo.webp" alt="Logo">
+                <h2>Nayel</h2>
+            </div>
+            <ul class="sidebar__list">
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-briefcase fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="active | d-flx align-center fs-16 cr-black rad-6 p-10" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="plans.html">
+                        <i class="fa-solid fa-layer-group fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--===== Content Section =====-->
+        <main class="content | w-full">
+            <!-- Content Head -->
+            <div class="content__head | bg-white p-15 flx-center-btween">
+                <div class="content__search | p-rel">
+                    <input class="p-10 rad-10 fs-15" type="search" placeholder="Type a keywork">
+                </div>
+                <div class="content__icons | d-flx align-center">
+                    <span class="p-rel">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="./imgs/avatar.webp" alt="Header Avatar">
+                </div>
+            </div>
+            <!-- Content Title -->
+            <h1 class="content__title | cr-black p-rel">Files</h1>
+            <!-- Files Wrapper -->
+            <div class="files__wrapper | d-flx gap-20 m-20">
+                <!-- Files Statistics & File Upload widgets -->
+                <div class="files-stats-upload">
+                    <!-- Files Statistics widget -->
+                    <div class="file-stats | bg-white p-20 rad-10">
+                        <h2 class="cr-dk-purple mb-15 sm-txt-center">Files Statistics</h2>
+                        <!-- File Stats Box [1] -->
+                        <div class="file-stats-box | d-flx align-center p-10 mb-10 fs-13 rad-5">
+                            <i class="fa-regular fa-file-pdf fa-xl | bg-light-blue flx-center-center cr-blue"></i>
+                            <div class="stats-box-info ">
+                                <p class="cr-black fs-14 fw-600">PDF Files</p>
+                                <small class="cr-gray fs-13">130 File</small>
+                            </div>
+                            <span class="cr-gray">6.5GB</span>
+                        </div>
+                        <!-- File Stats Box [2] -->
+                        <div class="file-stats-box | d-flx align-center p-10 mb-10 fs-13 rad-5">
+                            <i class="fa-regular fa-images fa-xl | bg-light-green flx-center-center cr-green"></i>
+                            <div class="stats-box-info ">
+                                <p class="cr-black fs-14 fw-600">Images</p>
+                                <small class="cr-gray fs-13">115 File</small>
+                            </div>
+                            <span class="cr-gray">3.4GB</span>
+                        </div>
+                        <!-- File Stats Box [3] -->
+                        <div class="file-stats-box | d-flx align-center p-10 mb-10 fs-13 rad-5">
+                            <i class="fa-regular fa-file-word fa-xl | bg-light-red flx-center-center cr-red"></i>
+                            <div class="stats-box-info ">
+                                <p class="cr-black fs-14 fw-600">Word Files</p>
+                                <small class="cr-gray fs-13">110 File</small>
+                            </div>
+                            <span class="cr-gray">2.6GB</span>
+                        </div>
+                        <!-- File Stats Box [4] -->
+                        <div class="file-stats-box | d-flx align-center p-10 fs-13 rad-5">
+                            <i
+                                class="fa-regular fa-file-zipper fa-xl | bg-light-orange flx-center-center cr-orange"></i>
+                            <div class="stats-box-info ">
+                                <p class="cr-black fs-14 fw-600">Zip Files</p>
+                                <small class="cr-gray fs-13">98 File</small>
+                            </div>
+                            <span class="cr-gray">3.1GB</span>
+                        </div>
+                    </div>
+                    <!-- File Upload widget -->
+                    <div class="file-upload | bg-white p-20 rad-10">
+                        <h2 class="cr-dk-purple mb-15 sm-txt-center">Files Uploader</h2>
+                        <div class="upload-box | mb-25 txt-center rad-10">
+                            <i class="fa-solid fa-cloud-arrow-up fa-fw | cr-purple"></i>
+                            <p class="cr-gray fs-14 mt-25">Choose a file,<br>or drag it here!</p>
+                        </div>
+                        <div class="upload-btn | flx-center-center gap-10 bg-purple cr-white fs-13 rad-5">
+                            <i class="fa-solid fa-angles-up"></i>
+                            <span class="cr-white" href="#">Upload file</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Files Content -->
+                <div class="files__content | d-grid gap-20">
+                    <!-- Files Content Box [1] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/pdf.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.pdf</p>
+                        <small class="cr-gray fs-13">Nayel</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>20/06/2020</span>
+                            <span>5.5MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [2] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/avi.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.avi</p>
+                        <small class="cr-gray fs-13">Elzero</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>28/07/2020</span>
+                            <span>4.6MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [3] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/eps.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.eps</p>
+                        <small class="cr-gray fs-13">Ahmed</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>15/08/2020</span>
+                            <span>3.9MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [4] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/psd.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.psd</p>
+                        <small class="cr-gray fs-13">Osama</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>26/08/2020</span>
+                            <span>4.2MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [5] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/dll.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.dll</p>
+                        <small class="cr-gray fs-13">Coder</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>06/09/2020</span>
+                            <span>1.4MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [6] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/png.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.png</p>
+                        <small class="cr-gray fs-13">Adam</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>17/09/2020</span>
+                            <span>114KB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [7] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/dll.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.dll</p>
+                        <small class="cr-gray fs-13">Coder</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>06/09/2020</span>
+                            <span>1.4MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [8] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/png.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.png</p>
+                        <small class="cr-gray fs-13">Adam</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>17/09/2020</span>
+                            <span>114KB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [9] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/psd.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.psd</p>
+                        <small class="cr-gray fs-13">Osama</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>26/08/2020</span>
+                            <span>4.2MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [10] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/pdf.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.pdf</p>
+                        <small class="cr-gray fs-13">Nayel</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>20/06/2020</span>
+                            <span>5.5MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [11] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/avi.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.avi</p>
+                        <small class="cr-gray fs-13">Elzero</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>28/07/2020</span>
+                            <span>4.6MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [12] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/eps.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.eps</p>
+                        <small class="cr-gray fs-13">Ahmed</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>15/08/2020</span>
+                            <span>3.9MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [13] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/dll.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.dll</p>
+                        <small class="cr-gray fs-13">Coder</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>06/09/2020</span>
+                            <span>1.4MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [14] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/png.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.png</p>
+                        <small class="cr-gray fs-13">Adam</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>17/09/2020</span>
+                            <span>114KB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [15] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/dll.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.dll</p>
+                        <small class="cr-gray fs-13">Coder</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>06/09/2020</span>
+                            <span>1.4MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [16] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/png.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.png</p>
+                        <small class="cr-gray fs-13">Adam</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>17/09/2020</span>
+                            <span>114KB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [17] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/dll.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.dll</p>
+                        <small class="cr-gray fs-13">Coder</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>06/09/2020</span>
+                            <span>1.4MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [18] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/pdf.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.pdf</p>
+                        <small class="cr-gray fs-13">Nayel</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>20/06/2020</span>
+                            <span>5.5MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [19] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/avi.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.avi</p>
+                        <small class="cr-gray fs-13">Elzero</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>28/07/2020</span>
+                            <span>4.6MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [20] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/eps.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.eps</p>
+                        <small class="cr-gray fs-13">Ahmed</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>15/08/2020</span>
+                            <span>3.9MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [21] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/png.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.png</p>
+                        <small class="cr-gray fs-13">Adam</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>17/09/2020</span>
+                            <span>114KB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [22] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/dll.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.dll</p>
+                        <small class="cr-gray fs-13">Coder</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>06/09/2020</span>
+                            <span>1.4MB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [23] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/png.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.png</p>
+                        <small class="cr-gray fs-13">Adam</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>17/09/2020</span>
+                            <span>114KB</span>
+                        </div>
+                    </div>
+                    <!-- Files Content Box [24] -->
+                    <div class="content-box | bg-white p-10 rad-10">
+                        <i class="fa-solid fa-download | cr-gray p-abs"></i>
+                        <div class="content-icon | txt-center">
+                            <img class="mt-15 mb-15" src="./imgs/dll.svg" alt="File image">
+                        </div>
+                        <p class="txt-center mb-10 fs-14 cr-black">my-file.dll</p>
+                        <small class="cr-gray fs-13">Coder</small>
+                        <div class="content-info | flx-center-btween mt-10 pt-10 fs-13 cr-gray">
+                            <span>06/09/2020</span>
+                            <span>1.4MB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

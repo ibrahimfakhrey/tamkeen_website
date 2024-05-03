@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CSS File -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- My Framework CSS File -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google font | Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google font | Courgette -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="./imgs/favcon-32x32.png" type="image/x-icon">
+    <title>Courses</title>
+</head>
+
+<body>
+    <div class="container | d-flx">
+        <!--===== Sidebar Section =====-->
+        <aside class="sidebar | bg-white p-20 p-rel">
+            <div class="sidebar__logo">
+                <img src="./imgs/Logo.webp" alt="Logo">
+                <h2>Nayel</h2>
+            </div>
+            <ul class="sidebar__list">
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-briefcase fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="active | d-flx align-center fs-16 cr-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="plans.html">
+                        <i class="fa-solid fa-layer-group fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--===== Content Section =====-->
+        <main class="content | w-full">
+            <!-- Content Head -->
+            <div class="content__head | bg-white p-15 flx-center-btween">
+                <div class="content__search | p-rel">
+                    <input class="p-10 rad-10 fs-15" type="search" placeholder="Type a keywork">
+                </div>
+                <div class="content__icons | d-flx align-center">
+                    <span class="p-rel">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="./imgs/avatar.webp" alt="Header Avatar">
+                </div>
+            </div>
+            <!-- Content Title -->
+            <h1 class="content__title | cr-black p-rel">Courses</h1>
+            <!-- Courses Wrapper -->
+            <div class="courses__wrapper | d-grid gap-20 m-20">
+                <!-- Course Box [1] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-01.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-01.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Mastering Web Design</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Master the art of web designing and Mocking,
+                            prototyping and creating web design architecture</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">390</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">150</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [2] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-02.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-02.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Data Structure & Algorithms</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Master the art of data strcuture and famous
+                            algorithms like sorting, dividing & conquering</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">501</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">210</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [3] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-03.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-03.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Responsive Web Design</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Mastering responsive web design and
+                            media queries and learn everything about breakpoints</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">213</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">90</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [4] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-04.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-04.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Mastering Python</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Mastering Python to prepare for data science & AI,
+                            and automating things in your life</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">122</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">140</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [5] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-05.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-05.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">PHP Examples</a></h4>
+                        <p class="cr-gray fs-14 pt-10">PHP tutorials and examples & practice on web
+                            application, and connecting with databases</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">97</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">85</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [6] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-06.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-06.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Social Media Marketing</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Create SMART goals, identify KPIs, and define
+                            your target audience and their customer journey</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">209</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">60</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [7] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-07.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-07.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Learn Graphic Design</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Learn the essentials of graphic design, and complete a capstone
+                            project for your professional portfolio</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">117</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">110</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [8] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-01.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-08.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Mastering Web Design</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Master the art of web designing and Mocking,
+                            prototyping and creating web design architecture</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">390</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">150</small>
+                        </span>
+                    </div>
+                </div>
+                <!-- Course Box [9] -->
+                <div class="course__box | bg-white rad-10 p-rel">
+                    <img class="course-img" src="./imgs/course-02.webp" alt="Course image">
+                    <img class="teacher-img" src="./imgs/team-02.webp" alt="Teacher course image">
+                    <!-- Course Content Brief -->
+                    <div class="course-brief | p-20">
+                        <h4><a class="cr-dk-purple" href="#">Data Structure & Algorithms</a></h4>
+                        <p class="cr-gray fs-14 pt-10">Master the art of data strcuture and famous
+                            algorithms like sorting, dividing & conquering</p>
+                    </div>
+                    <!-- Course Info -->
+                    <div class="course-info | flx-center-btween p-15 p-rel">
+                        <small class="course-head | bg-purple cr-white fs-13">Course Info</small>
+                        <!-- Course Watchers -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-user | cr-blue"></i>
+                            <small class="fs-14">501</small>
+                        </span>
+                        <!-- Course Fee -->
+                        <span class="cr-gray">
+                            <i class="fa-solid fa-dollar-sign | cr-blue"></i>
+                            <small class="fs-14">210</small>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

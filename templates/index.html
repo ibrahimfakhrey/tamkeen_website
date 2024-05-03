@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CSS File -->
+    <link rel="stylesheet" href="../static/css/all.min.css">
+    <!-- My Framework CSS File -->
+    <link rel="stylesheet" href="../static/css/framework.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Google font | Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google font | Courgette -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="../static/imgs/favcon-32x32.png" type="image/x-icon">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container | d-flx">
+        <!--===== Sidebar Section =====-->
+        <aside class="sidebar | bg-white p-20 p-rel">
+            <div class="sidebar__logo">
+                <img src="../static/imgs/Logo.webp" alt="Logo">
+                <h2>Name</h2>
+            </div>
+            <ul class="sidebar__list">
+                <li class="sidebar__link">
+                    <a class="active | d-flx align-center fs-16 cr-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span>لوحة التحكم</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-briefcase fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="plans.html">
+                        <i class="fa-solid fa-layer-group fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--===== Content Section =====-->
+        <main class="content | w-full">
+            <!-- Content Head -->
+            <div class="content__head | bg-white p-15 flx-center-btween">
+                <div class="content__search | p-rel">
+                    <input class="p-10 rad-10 fs-15" type="search" placeholder="Type a keywork">
+                </div>
+                <div class="content__icons | d-flx align-center">
+                    <span class="p-rel">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="../static/imgs/avatar.webp" alt="Header Avatar">
+                </div>
+            </div>
+            <!-- Content Title -->
+            <h1 class="content__title | p-rel cr-black">لوحة التحكم</h1>
+            <!-- Content Wrapper -->
+            <div class="content__wrapper | d-grid gap-20">
+                <!-- Welcome widget -->
+                <div class="welcome | bg-white rad-10 sm-txt-center sm-block">
+                    <div class="welcome__box | bg-light-purple d-flx space-between p-20 pb-10">
+                        <div class="welcome__head">
+                            <h2 class="cr-dk-purple">Welcome</h2>
+                            <p class="cr-gray mt-5">{{current_user.name}}</p>
+                        </div>
+                        <img src="../static/imgs/Welcome.svg" alt="Welcome image">
+                    </div>
+                    <img class="welcome-avatar" src="../static/imgs/avatar.webp" alt="Welcome Avatar">
+                    <div class="welcome__body | d-flx mb-15 p-20 sm-block">
+                        <p>{{current_user.name}} <span class="d-block cr-gray fs-14 mt-10">{{current_user.role}}</span></p>
+
+                    </div>
+
+                </div>
+                <!-- Quick draft widget -->
+                <div class="quick | bg-white rad-10 p-20">
+                    <h2 class="mb-10 cr-dk-purple">Quick Draft</h2>
+                    <p class="cr-gray fs-15 mb-20">Write a draft for your ideas</p>
+                    <form class="quick__form">
+                        <input class="w-full bg-light-purple d-block mb-10 p-10 br-none rad-6 fs-15" type="text"
+                            placeholder="Title">
+                        <textarea class="w-full bg-light-purple d-block mb-15 p-10 br-none rad-6 fs-15"
+                            placeholder="Your thoughts"></textarea>
+                        <input class="quick-btn | w-fit d-block bg-purple fs-14 cr-white br-none prime-btn"
+                            type="submit" value="Save">
+                    </form>
+                </div>
+                <!-- Targets widget -->
+                <div class="targets | bg-white rad-10 p-20">
+                    <h2 class="mb-10 cr-dk-purple">Yearly Targets</h2>
+                    <p class="cr-gray fs-15 mb-20">Targets of the year</p>
+                    <!-- Target Row [1] -->
+                    <div class="target__row target-money | mb-20 d-flx align-center">
+                        <span class="target__icon | flx-center-center rad-5">
+                            <i class="fa-solid fa-dollar-sign fa-xl | cr-blue"></i>
+                        </span>
+                        <div class="target__info">
+                            <strong class="fs-15 cr-black">Money</strong>
+                            <span class="d-block fs-14 cr-gray mt-5 mb-15">$20.000</span>
+                            <div class="target-progrss | p-rel">
+                                <span class="blue-progrss | bg-blue" style="width: 80%;">
+                                    <small class="bg-blue cr-white">80%</small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Target Row [2] -->
+                    <div class="target__row target-project | mb-20 d-flx align-center">
+                        <span class="target__icon | flx-center-center rad-5">
+                            <i class="fa-solid fa-code fa-xl | cr-orange"></i>
+                        </span>
+                        <div class="target__info">
+                            <strong class="fs-15 cr-black">Projects</strong>
+                            <span class="d-block fs-14 cr-gray mt-5 mb-15">24</span>
+                            <div class="target-progrss | p-rel">
+                                <span class="orange-progrss | bg-orange" style="width: 63%;">
+                                    <small class="bg-orange cr-white">63%</small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Target Row [3] -->
+                    <div class="target__row target-team | mb-20 d-flx align-center ">
+                        <span class="target__icon | flx-center-center rad-5">
+                            <i class="fa-solid fa-user-group fa-xl | cr-green"></i>
+                        </span>
+                        <div class="target__info">
+                            <strong class="fs-15 cr-black">Team</strong>
+                            <span class="d-block fs-14 cr-gray mt-5 mb-15">12</span>
+                            <div class="target-progrss | p-rel">
+                                <span class="green-progrss | bg-green" style="width: 75%;">
+                                    <small class="bg-green cr-white">75%</small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tickets widget -->
+                <div class="ticket | bg-white rad-10 p-20">
+                    <h2 class="mb-10 cr-dk-purple">Tickets Statistics</h2>
+                    <p class="cr-gray fs-15 mb-20">Everything about support tickets</p>
+                    <div class="tickets__wrapper | d-grid gap-15 txt-center">
+                        <!-- Ticket Box [1] -->
+                        <div class="ticket__box | p-20 rad-10">
+                            <i class="fa-regular fa-rectangle-list fa-2x | mb-10 cr-orange"></i>
+                            <h2 class="cr-black">2500</h2>
+                            <small class="cr-gray">Total</small>
+                        </div>
+                        <!-- Ticket Box [2] -->
+                        <div class="ticket__box | p-20 rad-10">
+                            <i class="fa-solid fa-spinner fa-2x | mb-10 cr-blue"></i>
+                            <h2 class="cr-black">500</h2>
+                            <small class="cr-gray">Pending</small>
+                        </div>
+                        <!-- Ticket Box [3] -->
+                        <div class="ticket__box | p-20 rad-10">
+                            <i class="fa-regular fa-circle-check fa-2x | mb-10 cr-green"></i>
+                            <h2 class="cr-black">1900</h2>
+                            <small class="cr-gray">Closed</small>
+                        </div>
+                        <!-- Ticket Box [4] -->
+                        <div class="ticket__box | p-20 rad-10">
+                            <i class="fa-regular fa-circle-xmark fa-2x | mb-10 cr-red"></i>
+                            <h2 class="cr-black">110</h2>
+                            <small class="cr-gray">Deleted</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Latest News widget -->
+                <div class="news | bg-white rad-10 p-20">
+                    <h2 class="mb-20 cr-dk-purple">Latest News</h2>
+                    <!-- News Row [1] -->
+                    <div class="news__row | d-flx align-center mb-20 pb-20 p-rel">
+                        <img class="news-img | rad-5" src="../static/imgs/news-01.webp" alt="News image">
+                        <div class="news-info">
+                            <h3 class="cr-black fs-17">Created SASS section</h3>
+                            <p class="cr-gray fs-14">New SASS examples & tutorials</p>
+                        </div>
+                        <span class="news-label | bg-eee fs-13 label">3 Days ago</span>
+                    </div>
+                    <!-- News Row [2] -->
+                    <div class="news__row | d-flx align-center mb-20 pb-20 p-rel">
+                        <img class="news-img | rad-5" src="../static/imgs/news-02.webp" alt="News image">
+                        <div class="news-info">
+                            <h3 class="cr-black fs-17">Changed the design</h3>
+                            <p class="cr-gray fs-14">A brand new website design</p>
+                        </div>
+                        <span class="news-label | bg-eee fs-13 label">5 Days ago</span>
+                    </div>
+                    <!-- News Row [3] -->
+                    <div class="news__row | d-flx align-center mb-20 pb-20 p-rel">
+                        <img class="news-img | rad-5" src="../static/imgs/news-03.webp" alt="News image">
+                        <div class="news-info">
+                            <h3 class="cr-black fs-17">Team increased</h3>
+                            <p class="cr-gray fs-14">3 Developers joined the team</p>
+                        </div>
+                        <span class="news-label | bg-eee fs-13 label">7 Days ago</span>
+                    </div>
+                    <!-- News Row [4] -->
+                    <div class="news__row | d-flx align-center p-rel">
+                        <img class="news-img | rad-5" src="../static/imgs/news-04.webp" alt="News image">
+                        <div class="news-info">
+                            <h3 class="cr-black fs-17">Added payment gateway</h3>
+                            <p class="cr-gray fs-14">New payment gateways added</p>
+                        </div>
+                        <span class="news-label | bg-eee fs-13 label">9 Days ago</span>
+                    </div>
+                </div>
+                <!-- Tasks widget -->
+                <div class="tasks | bg-white rad-10 p-20">
+                    <h2 class="mb-20 cr-dk-purple">Latest Tasks</h2>
+                    <!-- Task Row [1] -->
+                    <div class="task__row | flx-center-btween mb-15 pb-15 p-rel">
+                        <div class="task-info">
+                            <h3 class="cr-black fs-17">Record one new video</h3>
+                            <p class="cr-gray fs-14 mt-5">Record python create exe project</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can | delete"></i>
+                    </div>
+                    <!-- Task Row [2] -->
+                    <div class="task__row | flx-center-btween mb-15 pb-15 p-rel">
+                        <div class="task-info">
+                            <h3 class="cr-black fs-17">Write article</h3>
+                            <p class="cr-gray fs-14 mt-5">Write low level VS high level languages</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can | delete"></i>
+                    </div>
+                    <!-- Task Row [3] -->
+                    <div class="task__row | flx-center-btween mb-15 pb-15 p-rel">
+                        <div class="task-info">
+                            <h3 class="cr-black fs-17">Finish project</h3>
+                            <p class="cr-gray fs-14 mt-5">Publish academy programming project</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can | delete"></i>
+                    </div>
+                    <!-- Task Row [4] -->
+                    <div class="task__row | done | flx-center-btween mb-15 pb-15 p-rel">
+                        <div class="task-info">
+                            <h3 class="cr-black fs-17">Attend the meeting</h3>
+                            <p class="cr-gray fs-14 mt-5">Attend the project business analysis meeting</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can | delete"></i>
+                    </div>
+                    <!-- Task Row [5] -->
+                    <div class="task__row | flx-center-btween p-rel">
+                        <div class="task-info">
+                            <h3 class="cr-black fs-17">Finish lesson</h3>
+                            <p class="cr-gray fs-14 mt-5">Finish teaching flexbox</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can | delete"></i>
+                    </div>
+                </div>
+                <!-- Top Search Items widget -->
+                <div class="topsearch | bg-white rad-10 p-20">
+                    <h2 class="mb-20 cr-dk-purple">Top Search Items</h2>
+                    <!-- Top Search head -->
+                    <div class="topsearch-head | flx-center-btween cr-black mb-10 pb-5">
+                        <h4>Keyword</h4>
+                        <h4>Search count</h4>
+                    </div>
+                    <!-- Top Search items -->
+                    <div class="topsearch-item | flx-center-btween pt-15 pb-15">
+                        <span class="cr-gray fs-15">Programming</span>
+                        <span class="bg-eee fs-13 label">104</span>
+                    </div>
+                    <div class="topsearch-item | flx-center-btween pt-15 pb-15">
+                        <span class="cr-gray fs-15">JavaScript</span>
+                        <span class="bg-eee fs-13 label">83</span>
+                    </div>
+                    <div class="topsearch-item | flx-center-btween pt-15 pb-15">
+                        <span class="cr-gray fs-15">PHP</span>
+                        <span class="bg-eee fs-13 label">67</span>
+                    </div>
+                    <div class="topsearch-item | flx-center-btween pt-15 pb-15">
+                        <span class="cr-gray fs-15">Code</span>
+                        <span class="bg-eee fs-13 label">129</span>
+                    </div>
+                    <div class="topsearch-item | flx-center-btween pt-15 pb-15">
+                        <span class="cr-gray fs-15">Design</span>
+                        <span class="bg-eee fs-13 label">110</span>
+                    </div>
+                    <div class="topsearch-item | flx-center-btween pt-15 pb-5">
+                        <span class="cr-gray fs-15">Logic</span>
+                        <span class="bg-eee fs-13 label">95</span>
+                    </div>
+                </div>
+                <!-- Latest Uploads widget -->
+                <div class="uploads | bg-white rad-10 p-20">
+                    <h2 class="mb-20 cr-dk-purple">Latest Uploads</h2>
+                    <ul class="uploads__list">
+                        <!-- Uploads item [1] -->
+                        <li class="uploads-item | flx-center-btween pt-5 pb-10">
+                            <div class="uploads-content | d-flx align-center gap-10">
+                                <img class="uploads-img" src="../static/imgs/pdf.svg" alt="PDF file image">
+                                <div class="uploads-info">
+                                    <p class="cr-black fs-16 mb-5">Myfile.pdf</p>
+                                    <p class="cr-gray fs-14">Nayel</p>
+                                </div>
+                            </div>
+                            <span class="bg-eee fs-13 label">2.9mb</span>
+                        </li>
+                        <!-- Uploads item [2] -->
+                        <li class="uploads-item | flx-center-btween pt-10 pb-10">
+                            <div class="uploads-content | d-flx align-center gap-10">
+                                <img class="uploads-img" src="../static/imgs/avi.svg" alt="AVI file image">
+                                <div class="uploads-info">
+                                    <p class="cr-black fs-16 mb-5">Myvideo-file.avi</p>
+                                    <p class="cr-gray fs-14">Admin</p>
+                                </div>
+                            </div>
+                            <span class="bg-eee fs-13 label">4.1mb</span>
+                        </li>
+                        <!-- Uploads item [3] -->
+                        <li class="uploads-item | flx-center-btween pt-10 pb-10">
+                            <div class="uploads-content | d-flx align-center gap-10">
+                                <img class="uploads-img" src="../static/imgs/psd.svg" alt="PSD file image">
+                                <div class="uploads-info">
+                                    <p class="cr-black fs-16 mb-5">my-Psd-file.psd</p>
+                                    <p class="cr-gray fs-14">Omar</p>
+                                </div>
+                            </div>
+                            <span class="bg-eee fs-13 label">7.3mb</span>
+                        </li>
+                        <!-- Uploads item [4] -->
+                        <li class="uploads-item | flx-center-btween pt-10 pb-10">
+                            <div class="uploads-content | d-flx align-center gap-10">
+                                <img class="uploads-img" src="../static/imgs/zip.svg" alt="ZIP file image">
+                                <div class="uploads-info">
+                                    <p class="cr-black fs-16 mb-5">My-Zip-file.zip</p>
+                                    <p class="cr-gray fs-14">User</p>
+                                </div>
+                            </div>
+                            <span class="bg-eee fs-13 label">9.6mb</span>
+                        </li>
+                        <!-- Uploads item [5] -->
+                        <li class="uploads-item | flx-center-btween pt-10 pb-10">
+                            <div class="uploads-content | d-flx align-center gap-10">
+                                <img class="uploads-img" src="../static/imgs/dll.svg" alt="DLL file image">
+                                <div class="uploads-info">
+                                    <p class="cr-black fs-16 mb-5">MyDLL-file.dll</p>
+                                    <p class="cr-gray fs-14">Admin</p>
+                                </div>
+                            </div>
+                            <span class="bg-eee fs-13 label">2.8mb</span>
+                        </li>
+                        <!-- Uploads item [6] -->
+                        <li class="uploads-item | flx-center-btween pt-10 pb-5">
+                            <div class="uploads-content | d-flx align-center gap-10">
+                                <img class="uploads-img" src="../static/imgs/eps.svg" alt="EPS file image">
+                                <div class="uploads-info">
+                                    <p class="cr-black fs-16 mb-5">My-Eps-file.eps</p>
+                                    <p class="cr-gray fs-14">Designer</p>
+                                </div>
+                            </div>
+                            <span class="bg-eee fs-13 label">9.7mb</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Last Project Progress widget -->
+                <div class="last-project | bg-white rad-10 p-20 p-rel">
+                    <h2 class="mb-20 cr-dk-purple">Last Project Progress</h2>
+                    <ul class="last-project-list | p-rel">
+                        <li class="finish | d-flx align-center mt-25 cr-black">Got the project</li>
+                        <li class="finish | d-flx align-center mt-25 cr-black">Started the project</li>
+                        <li class="finish | d-flx align-center mt-25 cr-black">The project about to finish</li>
+                        <li class="current | d-flx align-center mt-25 cr-black">Test the project</li>
+                        <li class="d-flx align-center mt-25 mb-10 cr-black">Finish the project & get money</li>
+                    </ul>
+                    <img src="../static/imgs/project.webp" alt="Project background image">
+                </div>
+                <!-- Reminders widget -->
+                <div class="reminders | bg-white rad-10 p-20 p-rel">
+                    <h2 class="mb-25 cr-dk-purple">Reminders</h2>
+                    <ul class="reminder__list">
+                        <!-- Reminder item [1] -->
+                        <li class="reminder__item | d-flx align-center mt-15">
+                            <span class="bg-blue"></span>
+                            <div class="reminder__info | blue">
+                                <h4 class="cr-black mb-5">Check my tasks list</h4>
+                                <span class="cr-gray fs-14">28/09/2023 - 12:00am</span>
+                            </div>
+                        </li>
+                        <!-- Reminder item [2] -->
+                        <li class="reminder__item | d-flx align-center mt-15">
+                            <span class="bg-green"></span>
+                            <div class="reminder__info | green">
+                                <h4 class="cr-black mb-5">Check my projects</h4>
+                                <span class="cr-gray fs-14">26/10/2023 - 12:00am</span>
+                            </div>
+                        </li>
+                        <!-- Reminder item [3] -->
+                        <li class="reminder__item | d-flx align-center mt-15">
+                            <span class="bg-orange"></span>
+                            <div class="reminder__info | orange">
+                                <h4 class="cr-black mb-5">Call all my clients</h4>
+                                <span class="cr-gray fs-14">05/11/2023 - 11:25am</span>
+                            </div>
+                        </li>
+                        <!-- Reminder item [4] -->
+                        <li class="reminder__item | d-flx align-center mt-15 mb-5">
+                            <span class="bg-red"></span>
+                            <div class="reminder__info | red">
+                                <h4 class="cr-black mb-5">Finish development workshop</h4>
+                                <span class="cr-gray fs-14">20/12/2023 - 10:05am</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Latest Post widget -->
+                <div class="post | bg-white rad-10 p-20 p-rel">
+                    <h2 class="mb-25 cr-dk-purple">Latest Post</h2>
+                    <div class="post__head | d-flx align-center">
+                        <img class="post-img" src="../static/imgs/avatar.webp" alt="Post avatar image">
+                        <div class="post-info">
+                            <h4 class="cr-black mb-5">Nayel Khaled</h4>
+                            <span class="cr-gray fs-14">About 3 hours ago</span>
+                        </div>
+                    </div>
+                    <p class="post__content | mt-20 mb-20 pt-20 pb-20 cr-black">
+                        If you once forfeit the confidence of your fellow citizens,
+                        you can never regain their respect and esteem. It is true
+                        that you may fool all of the people some of the time;
+                        you can even fool some of the people all of the time;
+                        but you can't fool all of the people all of the time.</p>
+                    <div class="post__stats | flx-center-btween cr-gray">
+                        <div class="post-heart">
+                            <i class="fa-solid fa-heart cr-red"></i>
+                            <span>1.8k</span>
+                        </div>
+                        <div class="post-comment">
+                            <i class="fa-solid fa-comments cr-blue"></i>
+                            <span>321</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social Media Stats widget -->
+                <div class="social-media | bg-white rad-10 p-20 p-rel">
+                    <h2 class="mb-25 cr-dk-purple">Social Media Stats</h2>
+                    <!-- Social Box [1] -->
+                    <div class="social-box | twitter | flx-center-btween p-15 mb-10 p-rel">
+                        <i class="fa-brands fa-twitter fa-2x | h-full cr-white flx-center-center"></i>
+                        <span>90K Followers</span>
+                        <a class="label fs-13 cr-white" href="#">Follow</a>
+                    </div>
+                    <!-- Social Box [2] -->
+                    <div class="social-box | youtube | flx-center-btween p-15 mb-10 p-rel">
+                        <i class="fa-brands fa-youtube fa-2x | h-full cr-white flx-center-center"></i>
+                        <span>765 Subs</span>
+                        <a class="label fs-13 cr-white" href="#">Subscribe</a>
+                    </div>
+                    <!-- Social Box [3] -->
+                    <div class="social-box | facebook | flx-center-btween p-15 mb-10 p-rel">
+                        <i class="fa-brands fa-facebook-f fa-2x | h-full cr-white flx-center-center"></i>
+                        <span>1M Likes</span>
+                        <a class="label fs-13 cr-white" href="#">Like</a>
+                    </div>
+                    <!-- Social Box [4] -->
+                    <div class="social-box | instagram | flx-center-btween p-15 mb-10 p-rel">
+                        <i class="fa-brands fa-instagram fa-2x | h-full cr-white flx-center-center"></i>
+                        <span>40K Followers</span>
+                        <a class="label fs-13 cr-white" href="#">Follow</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Projects Table -->
+            <div class="projects | bg-white p-20 m-20 rad-10">
+                <h2 class="mb-20 cr-dk-purple">Projects Table</h2>
+                <div class="table__wrapper">
+                    <table class="w-full fs-15">
+                        <thead>
+                            <tr class="cr-black fw-700">
+                                <td>Name</td>
+                                <td>Finish Date</td>
+                                <td>Client</td>
+                                <td>Price</td>
+                                <td>Team</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Table Row [1] -->
+                            <tr>
+                                <td>Ministry wikipedia</td>
+                                <td>10 May 2023</td>
+                                <td>Ministry</td>
+                                <td>$5300</td>
+                                <td class="table-imgs">
+                                    <img src="../static/imgs/team-01.webp">
+                                    <img src="../static/imgs/team-02.webp">
+                                    <img src="../static/imgs/team-03.webp">
+                                    <img src="../static/imgs/team-04.webp">
+                                </td>
+                                <td class="table-status">
+                                    <span class="label bg-orange cr-white fs-14">Pending</span>
+                                </td>
+                            </tr>
+                            <!-- Table Row [2] -->
+                            <tr>
+                                <td>Elzero Shop</td>
+                                <td>12 Oct 2021</td>
+                                <td>Elzero Company</td>
+                                <td>$1500</td>
+                                <td class="table-imgs">
+                                    <img src="../static/imgs/team-03.webp">
+                                    <img src="../static/imgs/team-01.webp">
+                                    <img src="../static/imgs/team-02.webp">
+                                </td>
+                                <td class="table-status">
+                                    <span class="label bg-purple cr-white fs-14">In Progress</span>
+                                </td>
+                            </tr>
+                            <!-- Table Row [3] -->
+                            <tr>
+                                <td>Bouba App</td>
+                                <td>05 Sep 2021</td>
+                                <td>Bouba</td>
+                                <td>$800</td>
+                                <td class="table-imgs">
+                                    <img src="../static/imgs/team-01.webp">
+                                    <img src="../static/imgs/team-03.webp">
+                                </td>
+                                <td class="table-status">
+                                    <span class="label bg-green cr-white fs-14">Completed</span>
+                                </td>
+                            </tr>
+                            <!-- Table Row [4] -->
+                            <tr>
+                                <td>Mahmoud Website</td>
+                                <td>22 May 2021</td>
+                                <td>Mahmoud</td>
+                                <td>$600</td>
+                                <td class="table-imgs">
+                                    <img src="../static/imgs/team-02.webp">
+                                    <img src="../static/imgs/team-04.webp">
+                                    <img src="../static/imgs/team-03.webp">
+                                </td>
+                                <td class="table-status">
+                                    <span class="label bg-green cr-white fs-14">Completed</span>
+                                </td>
+                            </tr>
+                            <!-- Table Row [5] -->
+                            <tr>
+                                <td>Sayed Website</td>
+                                <td>24 May 2021</td>
+                                <td>Sayed</td>
+                                <td>$300</td>
+                                <td class="table-imgs">
+                                    <img src="../static/imgs/team-01.webp">
+                                    <img src="../static/imgs/team-04.webp">
+                                </td>
+                                <td class="table-status">
+                                    <span class="label bg-red cr-white fs-14">Rejected</span>
+                                </td>
+                            </tr>
+                            <!-- Table Row [6] -->
+                            <tr>
+                                <td>Arena Application</td>
+                                <td>01 Mar 2021</td>
+                                <td>Arena Company</td>
+                                <td>$2600</td>
+                                <td class="table-imgs">
+                                    <img src="../static/imgs/team-01.webp">
+                                    <img src="../static/imgs/team-02.webp">
+                                    <img src="../static/imgs/team-03.webp">
+                                    <img src="../static/imgs/team-04.webp">
+                                </td>
+                                <td class="table-status">
+                                    <span class="label bg-green cr-white fs-14">Completed</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

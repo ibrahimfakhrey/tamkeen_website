@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CSS File -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- My Framework CSS File -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google font | Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google font | Courgette -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="./imgs/favcon-32x32.png" type="image/x-icon">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container | d-flx">
+        <!--===== Sidebar Section =====-->
+        <aside class="sidebar | bg-white p-20 p-rel">
+            <div class="sidebar__logo">
+                <img src="./imgs/Logo.webp" alt="Logo">
+                <h2>Nayel</h2>
+            </div>
+            <ul class="sidebar__list">
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="active | d-flx align-center fs-16 cr-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-briefcase fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="sidebar__link">
+                    <a class="d-flx align-center fs-16 cr-black rad-6 p-10" href="plans.html">
+                        <i class="fa-solid fa-layer-group fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--===== Content Section =====-->
+        <main class="content | w-full">
+            <!-- Content Head -->
+            <div class="content__head | bg-white p-15 flx-center-btween">
+                <div class="content__search | p-rel">
+                    <input class="p-10 rad-10 fs-15" type="search" placeholder="Type a keywork">
+                </div>
+                <div class="content__icons | d-flx align-center">
+                    <span class="p-rel">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="./imgs/avatar.webp" alt="Header Avatar">
+                </div>
+            </div>
+            <!-- Content Title -->
+            <h1 class="content__title | cr-black p-rel">Profile</h1>
+            <!-- Profile Page (Wrapper) -->
+            <div class="profile__page | m-20">
+                <!-- Overview widget -->
+                <div class="overview | bg-white d-flx align-center rad-10 mb-20">
+                    <!-- Left side -->
+                    <div class="view-avatar | txt-center">
+                        <img class="avatar-img | mb-15" src="./imgs/avatar.webp" alt="Overview avatar image">
+                        <h3 class="cr-purple mb-5">Nayel Khaled</h3>
+                        <p class="cr-gray fs-15 mb-20">Level 20</p>
+                        <div class="avatar-level | bg-light-purple rad-6 mb-20 p-rel">
+                            <span style="width: 60%;"></span>
+                        </div>
+                        <div class="avatar-rate | flx-center-center gap-4 mt-20 mb-10">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="cr-gray fs-14">417 Rating</p>
+                    </div>
+                    <!-- Right side -->
+                    <div class="view-info">
+                        <!-- Overview information row [1] -->
+                        <div class="info-row | w-full d-flx align-center">
+                            <div class="row-head | w-full d-flx align-center">
+                                <h4 class="cr-dk-purple fs-15">General Information</h4>
+                                <div class="fs-14">
+                                    <label class="toggle-label">
+                                        <input class="toggle-checkbox" type="checkbox" checked>
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row-content | w-full d-grid">
+                                <div class="fs-14">
+                                    <span class="cr-gray">First Name: </span>
+                                    <span class="cr-black">Nayel</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Last Name: </span>
+                                    <span class="cr-black">Al-Mudhish</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Gender: </span>
+                                    <span class="cr-black">Male</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Country: </span>
+                                    <span class="cr-black">Yemen</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Overview information row [2] -->
+                        <div class="info-row | w-full d-flx align-center">
+                            <div class="row-head | w-full d-flx align-center">
+                                <h4 class="cr-dk-purple fs-15">Personal Information</h4>
+                                <div class="fs-14">
+                                    <label class="toggle-label">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row-content | w-full d-grid">
+                                <div class="fs-14">
+                                    <span class="cr-gray">Email: </span>
+                                    <span class="cr-black">nayel@mail.com</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Phone: </span>
+                                    <span class="cr-black">+1 191-524-8995</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Birth Date: </span>
+                                    <span class="cr-black">01/01/2001</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Birth Place: </span>
+                                    <span class="cr-black">Cairo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Overview information row [3] -->
+                        <div class="info-row | w-full d-flx align-center">
+                            <div class="row-head | w-full d-flx align-center">
+                                <h4 class="cr-dk-purple fs-15">Job Information</h4>
+                                <div class="fs-14">
+                                    <label class="toggle-label">
+                                        <input class="toggle-checkbox" type="checkbox" checked>
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row-content | w-full d-grid">
+                                <div class="fs-14">
+                                    <span class="cr-gray">Title: </span>
+                                    <span class="cr-black">Full stack developer</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Programming Langs: </span>
+                                    <span class="cr-black">PHP</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Framework: </span>
+                                    <span class="cr-black">Laravel</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Experience: </span>
+                                    <span class="cr-black">3+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Overview information row [4] -->
+                        <div class="info-row | w-full d-flx align-center">
+                            <div class="row-head | w-full d-flx align-center">
+                                <h4 class="cr-dk-purple fs-15">Billing Information</h4>
+                                <div class="fs-14">
+                                    <label class="toggle-label">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row-content | w-full d-grid">
+                                <div class="fs-14">
+                                    <span class="cr-gray">Payment Method: </span>
+                                    <span class="cr-black">Paypal</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Email pay: </span>
+                                    <span class="cr-black">nayel@mail.com</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Subscription: </span>
+                                    <span class="cr-black">Annually</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="cr-gray">Subscription fees: </span>
+                                    <span class="cr-black">$98</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profile Wrapper (Other widgets) -->
+                <div class="profile__wrapper | d-flx gap-20">
+                    <!-- Profile Skills widget -->
+                    <div class="profile__skills | bg-white p-20 rad-10">
+                        <h2 class="mb-10 cr-dk-purple">My Skills</h2>
+                        <p class="cr-gray fs-15 mb-20">Completed skills list</p>
+                        <ul class="skills__wrapper | d-flx gap-5">
+                            <!-- Skill Box [1] -->
+                            <li class="skill-box | d-grid pt-15 pb-15">
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">HTML</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">HTML5</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">Web layout</span>
+                            </li>
+                            <!-- Skill Box [2] -->
+                            <li class="skill-box | d-grid pt-10 pb-15">
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">CSS</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">CSS3</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">SASS</span>
+                            </li>
+                            <!-- Skill Box [3] -->
+                            <li class="skill-box | d-grid pt-10 pb-15">
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">Bootstrap</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">Tailwind</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">JS</span>
+                            </li>
+                            <!-- Skill Box [4] -->
+                            <li class="skill-box | d-grid pt-10 pb-15">
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">jQuery</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">Git</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">Postman</span>
+                            </li>
+                            <!-- Skill Box [5] -->
+                            <li class="skill-box | d-grid pt-10 pb-10">
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">PHP</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">Laravel</span>
+                                <span class="bg-light-purple rad-5 fs-14 txt-center">MySQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Profile Activities widget -->
+                    <div class="profile__activities | bg-white p-20 rad-10">
+                        <h2 class="mb-10 cr-dk-purple">Latest Activities</h2>
+                        <p class="cr-gray fs-15 mb-20">Latest activities done by users</p>
+                        <!-- Activity Box [1] -->
+                        <div class="activity-box | flx-center-btween pt-5 pb-10">
+                            <div class="activity-box-info | d-flx align-center gap-15">
+                                <img src="./imgs/activity-01.webp" alt="Store image">
+                                <div class="activity-box-text">
+                                    <h4 class="cr-black fs-16 mb-5">Store</h4>
+                                    <p class="cr-gray fs-15">Bought mastering Python course</p>
+                                </div>
+                            </div>
+                            <div class="activity-box-time">
+                                <h4 class="cr-black fs-15 mb-5">18:10</h4>
+                                <small class="cr-gray fs-13">Yesterday</small>
+                            </div>
+                        </div>
+                        <!-- Activity Box [2] -->
+                        <div class="activity-box | flx-center-btween pt-10 pb-10">
+                            <div class="activity-box-info | d-flx align-center gap-15">
+                                <img src="./imgs/activity-02.webp" alt="Store image">
+                                <div class="activity-box-text">
+                                    <h4 class="cr-black fs-16 mb-5">Academy</h4>
+                                    <p class="cr-gray fs-15">Got the PHP certificate</p>
+                                </div>
+                            </div>
+                            <div class="activity-box-time">
+                                <h4 class="cr-black fs-15 mb-5">16:05</h4>
+                                <small class="cr-gray fs-13">Yesterday</small>
+                            </div>
+                        </div>
+                        <!-- Activity Box [3] -->
+                        <div class="activity-box | flx-center-btween pt-10 pb-10">
+                            <div class="activity-box-info | d-flx align-center gap-15">
+                                <img src="./imgs/activity-03.webp" alt="Store image">
+                                <div class="activity-box-text">
+                                    <h4 class="cr-black fs-16 mb-5">Badges</h4>
+                                    <p class="cr-gray fs-15">Unlocked the 10 skills badge</p>
+                                </div>
+                            </div>
+                            <div class="activity-box-time">
+                                <h4 class="cr-black fs-15 mb-5">19:00</h4>
+                                <small class="cr-gray fs-13">Yesterday</small>
+                            </div>
+                        </div>
+                        <!-- Activity Box [4] -->
+                        <div class="activity-box | flx-center-btween pt-10 pb-5">
+                            <div class="activity-box-info | d-flx align-center gap-15">
+                                <img src="./imgs/activity-01.webp" alt="Store image">
+                                <div class="activity-box-text">
+                                    <h4 class="cr-black fs-16 mb-5">Store</h4>
+                                    <p class="cr-gray fs-15">Bought Typescript course</p>
+                                </div>
+                            </div>
+                            <div class="activity-box-time">
+                                <h4 class="cr-black fs-15 mb-5">12:07</h4>
+                                <small class="cr-gray fs-13">Yesterday</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
